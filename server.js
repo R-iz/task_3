@@ -187,8 +187,7 @@ app.use("*", (req, res) => {
 })
 
 // Start the server
-app.listen(PORT, () => {
-  console.log(`🚀 Books REST API server is running on http://localhost:${PORT}`)
+export default app;
   console.log("📋 Available endpoints:")
   console.log("  GET    /books      - Get all books")
   console.log("  GET    /books/:id  - Get book by ID")
